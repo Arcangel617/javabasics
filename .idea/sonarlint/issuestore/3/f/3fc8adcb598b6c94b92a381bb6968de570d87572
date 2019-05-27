@@ -1,11 +1,0 @@
-
-?squid:S1170"!Make this final field static too.(•í´¿8‰­ËÉ£-
-Dsquid:S1170"!Make this final field static too.(±å–¿ıÿÿÿÿ8‰­ËÉ£-
-Dsquid:S1170"!Make this final field static too.(Ôş¾½üÿÿÿÿ8‰­ËÉ£-
-?squid:S1170"!Make this final field static too.(œæ±à8‰­ËÉ£-
-?squid:S1170"!Make this final field static too.(ñ ş8‰­ËÉ£-
-nsquid:S00116"ORename this field "CUIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•í´¿8‰­ËÉ£-
-wsquid:S00116"SRename this field "APELLIDO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±å–¿ıÿÿÿÿ8‰­ËÉ£-
-usquid:S00116"QRename this field "NOMBRE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôş¾½üÿÿÿÿ8‰­ËÉ£-
-wsquid:S00116"XRename this field "SUELDO_BASICO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œæ±à8‰­ËÉ£-
-vsquid:S00116"WRename this field "ANIO_INGRESO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ ş8‰­ËÉ£-
