@@ -1,0 +1,19 @@
+
+Dsquid:S1170"!Make this final field static too.(€ÚÂøÿÿÿÿ8ì¬ËÉ£-
+Dsquid:S1170"!Make this final field static too.(ì²¹Öøÿÿÿÿ8ì¬ËÉ£-
+Dsquid:S1170"!Make this final field static too.(¯‰˜Úıÿÿÿÿ8ì¬ËÉ£-
+Dsquid:S1170"!Make this final field static too.(ûîÖ²ıÿÿÿÿ8ì¬ËÉ£-
+Dsquid:S1170"!Make this final field static too.(®ãµ„ùÿÿÿÿ8ì¬ËÉ£-
+?squid:S1170"!Make this final field static too.(Ù€¦„8ì¬ËÉ£-
+Dsquid:S1170"!Make this final field static too.(¬å˜ûÿÿÿÿ8ì¬ËÉ£-
+¤squid:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İÍÑ·şÿÿÿÿ8ì¬ËÉ£-
+¤squid:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûÿİûûÿÿÿÿ8ì¬ËÉ£-
+Ÿsquid:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“ÙÁá8ì¬ËÉ£-
+¤squid:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“¤¦ıÿÿÿÿ8ì¬ËÉ£-
+usquid:S00116"QRename this field "CODIGO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ÚÂøÿÿÿÿ8ì¬ËÉ£-
+tsquid:S00116"PRename this field "RUBRO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì²¹Öøÿÿÿÿ8ì¬ËÉ£-
+zsquid:S00116"VRename this field "DESCRIPCION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯‰˜Úıÿÿÿÿ8ì¬ËÉ£-
+tsquid:S00116"PRename this field "COSTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûîÖ²ıÿÿÿÿ8ì¬ËÉ£-
+tsquid:S00116"PRename this field "STOCK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãµ„ùÿÿÿÿ8ì¬ËÉ£-
+wsquid:S00116"XRename this field "PORC_PTO_REPO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù€¦„8ì¬ËÉ£-
+{squid:S00116"WRename this field "EXIST_MINIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬å˜ûÿÿÿÿ8ì¬ËÉ£-
