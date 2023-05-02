@@ -20,9 +20,11 @@ At least an idea of what is programming. If you don't have any idea, I'll prepar
 
 ### How to run sonarqube server locally.
 
-It is assumed that docker is already installed and the server is already downloaded.
+``$ docker pull sonarqube``
 
-``$ sudo docker start sonarqube``
+``$ docker run -d --name sonarqube -p 9000:9000 sonarqube``
+
+``$ docker start sonarqube``
 
 once the sonarqube server is running, you should open in your browser:
 

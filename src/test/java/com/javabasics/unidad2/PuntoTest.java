@@ -1,17 +1,17 @@
 package com.javabasics.unidad2;
 
-import org.junit.Test;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PuntoTest {
+import org.junit.jupiter.api.Test;
+
+class PuntoTest {
 
     private final double X = 3;
     private final double Y = 4;
 
     @Test
-    public void shouldCreatePuntoOrigen() {
+    void shouldCreatePuntoOrigen() {
         Punto punto = new Punto();
 
         assertThat(punto.getX(), is(0.0));
@@ -19,7 +19,7 @@ public class PuntoTest {
     }
 
     @Test
-    public void shouldCreatePunto() {
+    void shouldCreatePunto() {
         Punto punto = new Punto(X, Y);
 
         assertThat(punto.getX(), is(X));
@@ -27,14 +27,14 @@ public class PuntoTest {
     }
 
     @Test
-    public void shouldReturnDistancia() {
+    void shouldReturnDistancia() {
         Punto punto = new Punto();
 
         assertThat(punto.distanciaA(new Punto(X, Y)), is(5.0));
     }
 
     @Test
-    public void shouldDesplazarPunto() {
+    void shouldDesplazarPunto() {
         Punto punto = new Punto();
         punto.desplazar(X, Y);
 
@@ -43,7 +43,7 @@ public class PuntoTest {
     }
 
     @Test
-    public void shouldReturnCoordenadas() {
+    void shouldReturnCoordenadas() {
         Punto punto = new Punto(X, Y);
 
         assertThat(punto.coordenadas(), is("(" + X + ", " + Y + ")"));

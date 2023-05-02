@@ -1,25 +1,22 @@
 package com.javabasics.unidad2;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@RunWith(MockitoJUnitRunner.class)
-public class PersonaTest {
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-    private Persona persona;
+class PersonaTest {
 
     private final int nroDni = 1122334455;
     private final String nombre = "NOMBRE";
     private final String apellido = "APELLIDO";
     private final int anioNacimiento = 1989;
 
-    @Before
-    public void setUp() {
+    private Persona persona;
+
+    @BeforeEach
+    void setUp() {
         persona = Persona.builder()
                 .nroDni(nroDni)
                 .nombre(nombre)
@@ -29,7 +26,7 @@ public class PersonaTest {
     }
 
     @Test
-    public void shouldCreateAPersonWithAllParameters() {
+    void shouldCreateAPersonWithAllParameters() {
         assertThat(persona.getNroDni(), is(nroDni));
         assertThat(persona.getNombre(), is(nombre));
         assertThat(persona.getApellido(), is(apellido));
@@ -37,17 +34,17 @@ public class PersonaTest {
     }
 
     @Test
-    public void shouldReturnLastNameAndFirstName() {
+    void shouldReturnLastNameAndFirstName() {
         assertThat(persona.apeYNom(), is(apellido + " " + nombre));
     }
 
     @Test
-    public void shouldReturnFirstNameAndLastName() {
+    void shouldReturnFirstNameAndLastName() {
         assertThat(persona.nomYApe(), is(nombre + " " + apellido));
     }
 
     @Test
-    public void shouldReturnEdad() {
-        assertThat(persona.edad(), is(30));
+    void shouldReturnEdad() {
+        assertThat(persona.edad(), is(34));
     }
 }

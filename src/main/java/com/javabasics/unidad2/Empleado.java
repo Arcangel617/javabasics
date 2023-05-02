@@ -1,9 +1,8 @@
 package com.javabasics.unidad2;
 
+import com.javabasics.javabasicsutils.Constants;
 import lombok.Builder;
 import lombok.Getter;
-
-import static com.javabasics.javabasicsutils.Constants.*;
 
 @Getter
 @Builder
@@ -24,23 +23,23 @@ public class Empleado {
     }
 
     public int antiguedad() {
-        return CURRENT_YEAR - anioIngreso;
+        return Constants.CURRENT_YEAR - anioIngreso;
     }
 
     public double descuento() {
-        return sueldoBasico * EMPLEADO_DISCOUNT + 12;
+        return sueldoBasico * Constants.EMPLEADO_DISCOUNT + 12;
     }
 
     public double adicional() {
         if (antiguedad() >= 2 && antiguedad() < 10) {
-            return sueldoBasico * ADICIONAL_4;
+            return sueldoBasico * Constants.ADICIONAL_4;
         }
 
         if (antiguedad() >= 10) {
-            return sueldoBasico * ADICIONAL_6;
+            return sueldoBasico * Constants.ADICIONAL_6;
         }
 
-        return sueldoBasico * ADICIONAL_2;
+        return sueldoBasico * Constants.ADICIONAL_2;
     }
 
     public double sueldoNeto() {

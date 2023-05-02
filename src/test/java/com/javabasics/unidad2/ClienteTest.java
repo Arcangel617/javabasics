@@ -1,12 +1,12 @@
 package com.javabasics.unidad2;
 
-import org.junit.Before;
-import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ClienteTest {
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class ClienteTest {
 
     private Cliente cliente;
 
@@ -15,8 +15,8 @@ public class ClienteTest {
     private final String NOMBRE = "NOMBRE";
     private final double SALDO = 1000;
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    void setUp() {
         cliente = Cliente.builder()
                 .nroDni(NRO_DNI)
                 .apellido(APELLIDO)
@@ -26,7 +26,7 @@ public class ClienteTest {
     }
 
     @Test
-    public void shouldCreateClienteWithAllParameters() {
+    void shouldCreateClienteWithAllParameters() {
         assertThat(cliente.getNroDni(), is(NRO_DNI));
         assertThat(cliente.getApellido(), is(APELLIDO));
         assertThat(cliente.getNombre(), is(NOMBRE));
@@ -34,23 +34,23 @@ public class ClienteTest {
     }
 
     @Test
-    public void shouldReturnLastNameAndFirstName() {
+    void shouldReturnLastNameAndFirstName() {
         assertThat(cliente.apeYnom(), is(APELLIDO + " " + NOMBRE));
     }
 
     @Test
-    public void shouldReturnFirstNameAndLastName() {
+    void shouldReturnFirstNameAndLastName() {
         assertThat(cliente.nomYape(), is(NOMBRE + " " + APELLIDO));
     }
 
     @Test
-    public void shouldReturnNuevoSaldo() {
+    void shouldReturnNuevoSaldo() {
         cliente.nuevoSaldo(2000);
         assertThat(cliente.getSaldo(), is(2000.0));
     }
 
     @Test
-    public void shouldReturnSaldoActualizado() {
+    void shouldReturnSaldoActualizado() {
         cliente.agregaSaldo(2000);
         assertThat(cliente.getSaldo(), is(3000.0));
     }

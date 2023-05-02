@@ -1,22 +1,19 @@
 package com.javabasics.unidad2;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@RunWith(MockitoJUnitRunner.class)
-public class LaboratorioTest {
+import org.junit.jupiter.api.Test;
+
+class LaboratorioTest {
 
     private final String NOMBRE = "nombre";
     private final String DOMICILIO = "domicilio";
     private final String TELEFONO = "telefono";
 
     @Test
-    public void shouldBuildObjectWithoutParamenters() {
+    void shouldBuildObjectWithoutParamenters() {
         Laboratorio laboratorio = Laboratorio.builder().build();
 
         assertThat(laboratorio.getNombre(), is(nullValue()));
@@ -27,7 +24,7 @@ public class LaboratorioTest {
     }
 
     @Test
-    public void shouldBuildObjectWithNombreDomicilioAndTelefono() {
+    void shouldBuildObjectWithNombreDomicilioAndTelefono() {
         Laboratorio laboratorio = Laboratorio.builder()
                 .nombre(NOMBRE)
                 .domicilio(DOMICILIO)
@@ -42,7 +39,7 @@ public class LaboratorioTest {
     }
 
     @Test
-    public void shouldBuildObjectWithNombreAndDomicilio() {
+    void shouldBuildObjectWithNombreAndDomicilio() {
         Laboratorio laboratorio = Laboratorio.builder()
                 .nombre(NOMBRE)
                 .domicilio(DOMICILIO)
@@ -56,7 +53,7 @@ public class LaboratorioTest {
     }
 
     @Test
-    public void shouldBuildObjectWithNombre() {
+    void shouldBuildObjectWithNombre() {
         Laboratorio laboratorio = Laboratorio.builder()
                 .nombre(NOMBRE)
                 .build();
